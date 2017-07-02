@@ -112,7 +112,7 @@ h1{
 	padding:30px;
 }
 .contactImage{
-	background-image:url(/home/arvind/Desktop/indtoolslabV2.0/images/telephone.jpg)!important;
+	background-image:url("https://unsplash.com/search/telephone?photo=71CjSSB83Wo")!important;
 	background-size: cover;
 	height: 600px;
 	color:white;
@@ -177,4 +177,7 @@ background-color: #203677;
 	font-family: Josefin Sans;
 	font-weight: bold;
 
+}
+.carousel-caption{
+	margin-bottom: 100px!important;
 }
