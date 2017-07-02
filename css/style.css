@@ -60,14 +60,14 @@ h3{
 .footer1{
 	height:310px;
 	background-size: cover;
-	background-color: #F7465B!important;
+	background-color: #FF931F!important;
 	padding-left: 60px;
 	color: #FFFFFF;
 	margin-top: -20px;
 	padding:20px;
-	font-family: Ubuntu;
+	font-family: Inconsolata;
 	font-size:1.4em;
-	font-weight: bold;
+	
 }
 h1{
 	font-family: lobster;
