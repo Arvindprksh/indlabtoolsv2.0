@@ -167,6 +167,10 @@ width:200px;
 background-color: #203677;
 
 }
+#affix2.affix-bottom{
+	margin-bottom:200px;
+
+}
 .sidebar{
 	margin-top: -20px;
 	/*background-color: #203677;*/
