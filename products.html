@@ -26,7 +26,7 @@
 <!-- Font import link-->
 <script>
 	$(document).ready(function(){
-		var totalImages	= $(".sliderImage").size();
+		var totalImages	= $(".sliderImage").length;
 		var imagesLoaded=0;
 		$('body').loadie();
 		$(".sliderImage").on("load", function(){
@@ -70,6 +70,17 @@
 </script>
 </head>
 <body>
+<script type="text/javascript">
+	$(document).ready(function(){
+	$('#affix2').affix({
+    offset: {
+       top: 120,
+       bottom: $('#footer1').outerHeight(true)+100;
+   }
+   });
+   alert("hello");	   
+});
+</script>
 	<!--<div class="newNav" >-->
 	<nav id="affix1" class="navbar navbar-default newNav" data-spy="affix" data-offset-top="0">	
 		<ul class="nav nav-pills" >
@@ -77,7 +88,7 @@
 			<li class="pull-right"><a href="contact.html" id="button1" role="button">Contact</a></li>
 			<li class="pull-right"><a class="active" href="products.html" role="button">Products</a></li>
 			<li class="pull-right"><a href="aboutUs.html" role="button">About Us</a></li>
-			<li class="pull-right"><a href="index.html" role="button">Home</a></li>
+			<li class="pull-right"><a id="home" href="index.html" role="button">Home</a></li>
 
 		</ul>
 	</nav>
@@ -91,33 +102,16 @@
 	</div>-->
 
 	<div class="row" ng-app="app" ng-controller="controller">
-		<div class="col-md-2 sidebar">
+		<div class="col-md-2 sidebar" id="sidebar">
 			<nav>
 				<ul id="affix2" class="nav nav-pills nav-stacked " data-spy="affix" data-offset-top="-5" >
 					<div ng-repeat="x in a">
 						<li class="sides"> <a class="links" href="#{{ unit_name[x-1].split(' ').join('') }}"> {{ unit_name[x] }}</a></li>
 					</div>
-					<!--<li ><a href="#incubator">Incubator</a></li>
-					<ul class="dropdown-menu">
-						<li><a href="#">HTML</a></li>
-						<li><a href="#">CSS</a></li>
-						<li><a href="#">JavaScript</a></li>
-					</ul> 
-					<li><a href="#Laboven">Lab oven</a></li>
-					<li><a href="#mufflefurace">Muffle Furnace</a></li>
-					<li><a href="#traydrier">Tray Drier</a></li>
-					<li><a href="#vacuumoven">Vacuum Oven</a></li>
-					<li><a href="#deepfreezer">Deep Freezer</a></li>
-					<li><a href="#walkinchamber">Walk in Chamber</a></li>
-					<li><a href="#phmeter">pH Meter</a></li>
-					<li><a href="#conductivitymeter">Conductivity Meter</a></li>
-					<li><a href="#analyticalbalance">Analytical Balance</a></li>
-					<li><a href="#spectrometer">Spectrometer</a></li>-->
 				</ul>
 			</nav>
 		</div>
 		<div class="mainProductContent">
-
 			<br><br>
 			<h1 class="intro2prod">We offer a wide range of products</h1>
 			<div class="productList" ng-repeat="x in a">
@@ -128,16 +122,14 @@
 			</div>
 		</div>
 	</div>			
-	<div class="footer1">
+	<div class="footer1" id="#footer1">
 		<div class="row">
 			<div class="col-md-3"><h3>IndLabTools</h3><br>
 				<p>House of quality industrial lab equipments</p>
 			</div>
 			<div class="col-md-5"><p class="powered">Coded by Arvind Prakash</p></div>
 		</div>
-		<div class="col-md-5"><p class="powered">Powered by Pied Piper</p></div>
-	</div>
-</div>
+	</div>	
 </body>
 </html>
 </body>

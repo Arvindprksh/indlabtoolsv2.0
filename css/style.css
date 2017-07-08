@@ -126,6 +126,7 @@ h1{
 	/*color:white;*/
 	margin-top: 0px;
 	opacity: 0.8;
+	padding:100px;
 }
 .contactText{
 	opacity: 1;
@@ -163,6 +164,10 @@ label{
 .affix{
 	top: 0;
 	width: 100%;
+
+}
+#affix2{
+	background-color: red!important;
 }
 #affix2.affix-top{
 /*margin-top: 120px;*/
@@ -175,8 +180,9 @@ width:200px;
 background-color: #203677;
 
 }
-#affix2.affix-bottom{
-	margin-bottom:200px;
+.affix-bottom{
+	margin-bottom:0px;
+	position: absolute;
 
 }
 .sidebar{
@@ -189,7 +195,7 @@ background-color: #203677;
 .carousel-caption{
 	margin-bottom: 100px!important;
 }
-<<<<<<< HEAD
+
 .anchor{
 	 display: block;
   height: 120px; /*same height as header*/
@@ -199,12 +205,9 @@ background-color: #203677;
 .sides:hover{
 	background-color: #0A83A4;
 }
-=======
 .mainstuff{
 	/*background-color: red;*/
 }
 .aboutus1{
 	font-size:1.4em;
 }
-
->>>>>>> 42ef3786e5a3dade0e3266d8133e81935ae635ae
