@@ -10,7 +10,7 @@ a{
 ul.nav .logo1:hover{background-color: #764A99;}
 /*.nav .active {background-color: cyan;}*/
 .newNav{
-	padding-top:50px;
+	padding-top:51px;
 	background-color: #764A99;/*red#D5394A*/;/*#b56357;*/
 	font-family: lobster;
 	font-size:2em;
@@ -150,7 +150,7 @@ label{
 .mainAbout{
 	color:white;
 	padding:10%;
-	font-size: 2em;
+	font-size: 1.4em;
 }
 .genInfo{
 	font-family: Julius Sans One;
@@ -189,6 +189,7 @@ background-color: #203677;
 .carousel-caption{
 	margin-bottom: 100px!important;
 }
+<<<<<<< HEAD
 .anchor{
 	 display: block;
   height: 120px; /*same height as header*/
@@ -198,3 +199,12 @@ background-color: #203677;
 .sides:hover{
 	background-color: #0A83A4;
 }
+=======
+.mainstuff{
+	/*background-color: red;*/
+}
+.aboutus1{
+	font-size:1.4em;
+}
+
+>>>>>>> 42ef3786e5a3dade0e3266d8133e81935ae635ae
