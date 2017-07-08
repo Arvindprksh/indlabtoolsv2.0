@@ -4,7 +4,9 @@ body{
 	margin:0px;
 	background-color: #3D5265;
 }
-
+a{
+	text-decoration: none;
+}
 ul.nav .logo1:hover{background-color: #764A99;}
 /*.nav .active {background-color: cyan;}*/
 .newNav{
@@ -15,6 +17,11 @@ ul.nav .logo1:hover{background-color: #764A99;}
 	background-size: cover;
 	border-width: 0px;
 	z-index: 1;
+	/*padding-right: 20px;*/
+}
+.links:hover{
+	text-decoration: none;
+	color: White;
 }
 
 .Logo{
@@ -87,15 +94,16 @@ h1{
 }
 .productContent{
 	padding:20px 100px 20px 100px;
-	font-size: 2em;
+	font-size: 1.4em;
 	font-family: Ubuntu!important;
 	color:#FFFFFF;
 }
 .productTitle{
 	padding:20px 100px 20px 100px;
-	font-size:3em;
-	font-family: Indie Flower;
+	font-size:2em;
+	font-family: Julius Sans One;
 	color:#FFFFFF;
+
 }
 .contactHead{
 	color: white;
@@ -112,10 +120,10 @@ h1{
 	padding:30px;
 }
 .contactImage{
-	background-image:url("https://unsplash.com/search/telephone?photo=71CjSSB83Wo")!important;
+	background-image:url("/home/arvind/Desktop/indtoolslabV2.0/images/telephone.jpg")!important;
 	background-size: cover;
 	height: 600px;
-	color:white;
+	/*color:white;*/
 	margin-top: 0px;
 	opacity: 0.8;
 }
@@ -180,4 +188,13 @@ background-color: #203677;
 }
 .carousel-caption{
 	margin-bottom: 100px!important;
+}
+.anchor{
+	 display: block;
+  height: 120px; /*same height as header*/
+  margin-top: -120px; /*same height as header*/
+  visibility: hidden;
+}
+.sides:hover{
+	background-color: #0A83A4;
 }
