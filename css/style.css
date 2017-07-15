@@ -11,12 +11,13 @@ ul.nav .logo1:hover{background-color: #764A99;}
 /*.nav .active {background-color: cyan;}*/
 .newNav{
 	padding-top:51px;
-	background-color: #764A99;/*red#D5394A*/;/*#b56357;*/
+	background-color: #c0392b;/*red#D5394A*/;/*#b56357;*/
 	font-family: lobster;
 	font-size:2em;
 	background-size: cover;
 	border-width: 0px;
 	z-index: 1;
+	color:#ecf0f1;
 	/*padding-right: 20px;*/
 }
 .links:hover{
@@ -167,7 +168,7 @@ label{
 
 }
 #affix2{
-	background-color: red!important;
+	/*background-color: red!important;*/
 }
 #affix2.affix-top{
 /*margin-top: 120px;*/
@@ -234,3 +235,4 @@ background-color: #203677;
   font-size:14px;
   text-decoration: none;
 }
+.
