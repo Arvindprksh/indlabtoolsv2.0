@@ -184,6 +184,8 @@ background-color: #203677;
 .affix-bottom{
 	margin-bottom:0px;
 	position: absolute;
+	background-color: #203677;
+	width: 200px;
 
 }
 .sidebar{

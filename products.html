@@ -102,9 +102,9 @@
 	</div>-->
 
 	<div class="row" ng-app="app" ng-controller="controller">
-		<div class="col-md-2 sidebar" id="sidebar">
-			<nav>
-				<ul id="affix2" class="nav nav-pills nav-stacked " data-spy="affix" data-offset-top="-5" >
+		<div class="col-md-2 sidebar " id="sidebar">
+			<nav id="affix2" class ="affix-top" data-spy="affix" data-offset-bottom="312" data-offset-top="-5"> 
+				<ul class="nav nav-pills nav-stacked ">
 					<div ng-repeat="x in a">
 						<li class="sides"> <a class="links" href="#{{ unit_name[x-1].split(' ').join('') }}"> {{ unit_name[x] }}</a></li>
 					</div>
