@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-<h1> THE FORM IS SUBMITTED</h1>
 <?php
 /**
  * This example shows how to handle a simple contact form.
@@ -15,7 +8,7 @@ $msg = '';
 if (array_key_exists('email', $_POST)) {
     date_default_timezone_set('Etc/UTC');
 
-    require 'PHPMailer/PHPMailerAutoload.php';
+    require '../PHPMailerAutoload.php';
 
     //Create a new PHPMailer instance
     $mail = new PHPMailer;
@@ -28,21 +21,21 @@ if (array_key_exists('email', $_POST)) {
     //Use a fixed address in your own domain as the from address
     //**DO NOT** use the submitter's address here as it will be forgery
     //and will cause your messages to fail SPF checks
-    $mail->setFrom('arvindprksh1@gmail.com', 'First Last');
+    $mail->setFrom('from@example.com', 'First Last');
     //Send the message to yourself, or whoever should receive contact for submissions
-    $mail->addAddress('arvindprksh2@gmail.com', 'John Doe');
+    $mail->addAddress('whoto@example.com', 'John Doe');
     //Put the submitter's address in a reply-to header
     //This will fail if the address provided is invalid,
     //in which case we should ignore the whole request
-    if ($mail->addReplyTo($_POST['email'], $_POST['firstName'])) {
+    if ($mail->addReplyTo($_POST['email'], $_POST['name'])) {
         $mail->Subject = 'PHPMailer contact form';
         //Keep it simple - don't use HTML
         $mail->isHTML(false);
         //Build a simple message body
         $mail->Body = <<<EOT
 Email: {$_POST['email']}
-Name: {$_POST['firstName']}
-Message: {$_POST['mobileNumber']}
+Name: {$_POST['name']}
+Message: {$_POST['message']}
 EOT;
         //Send the message, check for errors
         if (!$mail->send()) {
@@ -57,6 +50,22 @@ EOT;
     }
 }
 ?>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact form</title>
+</head>
+<body>
+<h1>Contact us</h1>
+<?php if (!empty($msg)) {
+    echo "<h2>$msg</h2>";
+} ?>
+<form method="POST">
+    <label for="name">Name: <input type="text" name="name" id="name"></label><br>
+    <label for="email">Email address: <input type="email" name="email" id="email"></label><br>
+    <label for="message">Message: <textarea name="message" id="message" rows="8" cols="20"></textarea></label><br>
+    <input type="submit" value="Send">
+</form>
 </body>
 </html>
